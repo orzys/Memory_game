@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.snowfall.js"></script>
+
+
+  <title>Programowanie w JAVASCRIPT</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <link href="css/navbar-fixed-top.css" rel="stylesheet">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    $.snowfall.start({
+      content: '<i class="fa fa-snowflake-o"></i>',
+      size: {
+        min: 20,
+        max: 35
+      }
+    });
+  </script>
+
+<audio id="correctAnswerSoundEffect">
+  <source src="audio/correctAnswerSound2.mp3" type="audio/mpeg">
+</audio>
+<audio id="wrongAnswerSoundEffect">
+  <source src="audio/wrongAnswerSound3.mp3" type="audio/mpeg">
+</audio>
+<audio id="endGameSoundEffect">
+  <source src="audio/endGameSound.mp3" type="audio/mpeg">
+</audio>
+
+
+  <section id="projekt1">
+    <p id="endGame"></p>
+    <a class="button" id="reset" href="index.html">Zagraj jeszcze raz</a>
+    <p id="title"></p>
+    <div class="memoryGameDiv" id="memoryGameDiv">
+        <p id="score"></p>
+        <p id="pairsInGame"></p>
+        <p id="attempts"></p>
+        <p id="stopwatch"></p>
+      <button class="button" id="start">Start</button>
+    </div>
+    <p id="score"></p>
+    <p id="pairsInGame"></p>
+    <p id="attempts"></p>
+    <p id="stopwatch"></p>
+  </section>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/memory.js"></script>
+
+</body>
+
+</html>
